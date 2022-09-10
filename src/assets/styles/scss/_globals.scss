@@ -68,6 +68,13 @@ button {
   max-width: 450px;
 }
 
+@media (max-width: 345px) {
+  .send-info {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 760px) {
   textarea {
     width: 100%;
