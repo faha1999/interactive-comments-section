@@ -100,10 +100,16 @@
 
   span {
     margin-left: 5px;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   img {
     margin-left: 20px;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 

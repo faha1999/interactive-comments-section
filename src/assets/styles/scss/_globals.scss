@@ -17,6 +17,10 @@ textarea {
   font-family: 'Rubik', sans-serif;
   min-height: 100px;
   line-height: 26px;
+
+  &:focus {
+    border-color: $neutral-dark-blue;
+  }
 }
 
 button {
@@ -32,6 +36,11 @@ button {
   color: $neutral-white;
   min-height: 40px;
   cursor: pointer;
+  transition: 0.4s ease-out;
+
+  &:hover {
+    background-color: $primary-light-grayish-blue;
+  }
 }
 
 .flex {
