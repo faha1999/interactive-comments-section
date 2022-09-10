@@ -124,3 +124,19 @@
 .author-logo {
   max-width: 10%;
 }
+
+.edit-text {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.update-btn {
+  margin-block: 15px;
+  margin-right: auto;
+}
+
+@media (min-width: 760px) {
+  .update-btn {
+    margin-right: 0;
+  }
+}
