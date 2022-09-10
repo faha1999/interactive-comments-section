@@ -33,3 +33,57 @@ button {
   min-height: 40px;
   cursor: pointer;
 }
+
+// flex
+.flex-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-flex {
+  display: flex;
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.comment,
+.reply-section,
+.add-comment {
+  background-color: $neutral-white;
+  padding: 5px 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  line-height: 26px;
+  max-width: 450px;
+}
+
+@media (min-width: 760px) {
+  .comment,
+  .reply-section,
+  .add-comment {
+    max-width: 750px;
+  }
+
+  .show-flex {
+    display: none;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+}
