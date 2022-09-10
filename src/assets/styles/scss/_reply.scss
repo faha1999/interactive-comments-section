@@ -1,0 +1,19 @@
+@media (max-width: 345px) {
+  .reply-section {
+    padding: 5px 0;
+    margin: 10px 7px;
+    max-width: 320px;
+  }
+
+  .reply-divider {
+    margin-left: 10px;
+    border: 0.1px solid $primary-light-grayish-blue;
+  }
+}
+
+@media (min-width: 760px) {
+  .reply-section {
+    max-width: 600px;
+    margin: 10px 30px;
+  }
+}

@@ -69,6 +69,10 @@ button {
 }
 
 @media (min-width: 760px) {
+  textarea {
+    width: 100%;
+  }
+
   .comment,
   .reply-section,
   .add-comment {
