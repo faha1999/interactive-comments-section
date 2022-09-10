@@ -33,6 +33,10 @@
   display: flex;
 }
 
+.reply {
+  max-width: 750px;
+}
+
 .userInfo {
   justify-content: start;
   align-items: center;
@@ -127,12 +131,13 @@
 
 .replySection {
   padding: 5px 0;
-  margin: 10px 7px;
+  margin: 10px 0;
   max-width: 320px;
 }
 
 .reply-divider {
-  margin-left: 10px;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
   border: 0.1px solid $primary-light-grayish-blue;
 }
 
@@ -178,11 +183,6 @@
     gap: 10px;
   }
 
-  .replySection {
-    max-width: 600px;
-    margin: 10px 30px;
-  }
-
   .userPicture,
   .authorLogo {
     max-width: 7%;
@@ -195,5 +195,16 @@
     padding: 40px 15px;
     margin-right: 20px;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 760px) {
+  .reply-divider {
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .replySection {
+    max-width: max-content;
   }
 }
