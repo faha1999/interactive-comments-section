@@ -34,8 +34,7 @@ button {
   cursor: pointer;
 }
 
-// flex
-.flex-desktop {
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +43,12 @@ button {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .show-flex {
@@ -57,33 +62,9 @@ button {
   display: none;
 }
 
-.comment,
-.reply-section,
-.add-comment {
-  background-color: $neutral-white;
-  padding: 5px 20px;
-  margin: 20px 0px;
-  border-radius: 10px;
-  line-height: 26px;
-  max-width: 450px;
-}
-
-@media (max-width: 345px) {
-  .send-info {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 @media (min-width: 760px) {
   textarea {
     width: 100%;
-  }
-
-  .comment,
-  .reply-section,
-  .add-comment {
-    max-width: 750px;
   }
 
   .show-flex {

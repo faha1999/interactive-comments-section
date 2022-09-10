@@ -3,8 +3,8 @@ import React from 'react';
 export const AddComment = (props) => {
   return (
     <>
-      <div className="add-comment">
-        <img className="author-logo hide" src={props.currentUser} />
+      <div className="addComment">
+        <img className="authorLogo hide" src={props.currentUser} />
         <textarea
           placeholder={props.textarea_placeholder}
           value={props.textarea_value}
@@ -12,8 +12,8 @@ export const AddComment = (props) => {
         >
           {props.comment}
         </textarea>
-        <div className="send-info">
-          <img className="author-logo show" src={props.currentUser} />
+        <div className="sendInfo">
+          <img className="authorLogo show" src={props.currentUser} />
           <button onClick={props.handleComment} className="send-btn">
             {props.sendButton}
           </button>

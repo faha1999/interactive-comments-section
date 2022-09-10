@@ -25,59 +25,59 @@ export const EditComment = (props) => {
   return (
     <>
       <div className="comment flex-desktop">
-        <div className="comment-rate comment-rate-flex-column">
+        <div className="commentRate commentRate-column">
           <img onClick={increaseScore} src={iconPlus} />
           <p>{score}</p>
           <img onClick={decreaseScore} src={iconMinus} />
         </div>
         <div className="flex-column">
-          <div className="user-info">
-            <img className="user-logo" src={props.image} />
-            <p className="user-name">{props.username}</p>
-            {props.currentUser && <p className="you-card">you</p>}
-            <p className="comment-date">{props.createdAt}</p>
+          <div className="userInfo">
+            <img className="userPicture" src={props.image} />
+            <p className="userName">{props.username}</p>
+            {props.currentUser && <p className="myCard">you</p>}
+            <p className="commentDate">{props.createdAt}</p>
             {props.currentUser ? (
-              <div className="comment-edit hide">
+              <div className="editComment hide">
                 <span onClick={props.handleDelete}>
                   <img src={iconDelete} />
-                  <span className="comment-edit-delete">Delete</span>
+                  <span className="deleteEditedComment">Delete</span>
                 </span>
                 <span onClick={props.handleEdit}>
                   <img src={iconEdit} />
-                  <span className="comment-edit-edit">Edit</span>
+                  <span className="editComment-edit">Edit</span>
                 </span>
               </div>
             ) : (
-              <div className="comment-edit hide">
+              <div className="editComment hide">
                 <div onClick={props.handleReply}>
                   <img src={iconReply} />
-                  <span className="comment-edit-reply">Reply</span>
+                  <span className="replyEditedComment">Reply</span>
                 </div>
               </div>
             )}
           </div>
           <textarea
-            className="edit-text"
+            className="editText"
             placeholder={props.textarea_placeholder}
             value={editText}
             onInput={(e) => setEditText(e.target.value)}
           >
             {props.comment}
           </textarea>
-          <div className="comment-info">
-            <div className="comment-rate show-flex">
+          <div className="commentInfo">
+            <div className="commentRate show-flex">
               <img onClick={increaseScore} src={iconPlus} />
               <p>{score}</p>
               <img onClick={decreaseScore} src={iconMinus} />
             </div>
-            <div className="comment-edit show">
+            <div className="editComment show">
               <span onClick={props.handleDelete}>
                 <img src={iconDelete} />
-                <span className="comment-edit-delete">Delete</span>
+                <span className="deleteEditedComment">Delete</span>
               </span>
               <span onClick={props.handleEdit}>
                 <img src={iconEdit} />
-                <span className="comment-edit-edit">Edit</span>
+                <span className="editComment-edit">Edit</span>
               </span>
             </div>
           </div>
